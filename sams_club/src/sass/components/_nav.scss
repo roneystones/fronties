@@ -1,0 +1,80 @@
+nav {
+    @extend %shadow;
+    text-align: center;
+    padding: 15px 50px;
+    background: #fff;
+
+    @include media-breakpoint-up(lg) {
+        width: 100%;
+        position: sticky;
+        overflow: hidden;
+        top: 0;
+        z-index: 9;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    .toggle,
+    [id^=drop] {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        margin-bottom: 15px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        background-color: #f7f7f7;
+        padding: 30px;
+
+        @include media-breakpoint-up(lg) {
+            display: inline;
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+
+    ul {
+        @extend %list-none;
+        text-align: left;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 5px;
+            float: right;
+        }
+
+        li {
+            font-size: 120%;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: $letter-spacing;
+            margin: 15px 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                display: inline;
+                font-size: 70%;
+                margin: 0 15px;
+            }
+        }
+    }
+}

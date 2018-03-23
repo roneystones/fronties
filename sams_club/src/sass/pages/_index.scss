@@ -1,0 +1,161 @@
+.slide {
+    font-size: 160%;
+    line-height: 140%;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        font-size: 100%;
+        text-align: left;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 200%;
+        line-height: 110%;
+        font-weight: 900;
+        margin-bottom: 30px;
+
+
+        @include media-breakpoint-up(md) {
+            font-size: 400%;
+
+            &:after {
+                margin-top: 30px;
+                display: block;
+                content: "";
+                background-color: #000;
+                width: 25%;
+                height: 1px;
+            }
+        }
+    }
+
+    .descricao {
+        color: lighten($text-color, 45%);
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.sessao-beneficios {
+    background-color: $secundary;
+    color: #fff;
+
+    img {
+        float: left;
+        margin-right: 15px;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pre {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: $letter-spacing;
+    color: $secundary;
+    margin-bottom: 15px;
+}
+
+
+.card-produto {
+    @extend %shadow;
+    font-size: 160%;
+    line-height: 140%;
+    background-color: #fff;
+    padding: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 100%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    img {
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    .descricao {
+        margin-bottom: 30px;
+        color: lighten($text-color, 45%);
+    }
+
+    .valor {
+        font-weight: 900;
+        color: $secundary;
+
+        &-grande {
+            font-size: 250%;
+
+            @include media-breakpoint-up(md) {
+                font-size: 200%;
+            }
+        }
+    }
+
+    .destaque {
+        color: $secundary;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+.card-banner {
+    @extend %shadow;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.card-categorias {
+    @extend %shadow;
+    background-color: #fff;
+    padding: 25px;
+    font-size: 80%;
+
+    h4 {
+        font-weight: 900;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $text-color;
+    }
+}

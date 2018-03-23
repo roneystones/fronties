@@ -1,0 +1,31 @@
+{
+  "name": "Sams Club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Roney Lacerda",
+    "email": "roney.lacerda@gmail.com"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "css-clean": "^1.7.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-foreach": "^0.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.2.0",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}

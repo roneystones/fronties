@@ -1,0 +1,199 @@
+.landing {
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat-x;
+    background-color: #56b6e6;
+    color: #fff;
+
+    &_titulo {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 300%;
+        font-weight: 900;
+        line-height: 110%;
+        margin-bottom: 30px;
+
+        &:after {
+            margin-top: 30px;
+            display: block;
+            content: "";
+            background-color: #fff;
+            width: 25%;
+            height: 1px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 400%;
+        }
+    }
+
+    h2 {
+        font-size: 140%;
+        line-height: 140%;
+        text-transform: none;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &_form {
+        background-color: $secundary;
+
+        .form_topo {
+            background-color: darken($secundary, 5%);
+            padding: 20px;
+        }
+        .form_titulo {
+            font-size: 125%;
+            font-weight: 700;
+            letter-spacing: $letter-spacing;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .form_conteudo {
+            padding: 20px;
+
+            @include media-breakpoint-up(lg) {
+                padding: 25px 50px;
+            }
+        }
+
+        .input_grupo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin: 0 0 5px 20px;
+            font-weight: 700;
+            display: block;
+        }
+
+        input {
+            @include input-placeholder {
+                color: #BDBDBD;
+                font-style: italic;
+            }
+
+            width: 100%;
+            border: 0;
+            border-radius: 30px;
+            padding: 12px 30px;
+        }
+
+        button {
+            width: 100%;
+            font-size: 90%;
+            padding: 15px 0;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 120%;
+            }
+        }
+    }
+}
+
+.landing_bullets {
+    background-color: #fff;
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 90%;
+    }
+}
+
+.landing_beneficios {
+    &_titulo {
+        margin: 0 auto 80px;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 75%;
+        }
+
+        h3 {
+            font-size: 140%;
+            line-height: 140%;
+            margin-bottom: 50px;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 160%;
+            }
+        }
+    }
+
+    .card {
+        margin-bottom: 30px;
+
+        h4 {
+            margin-bottom: 5px;
+            color: $secundary;
+        }
+
+        p,
+        ul {
+            color: lighten($text-color, 25%);
+            font-size: 120%;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 90%;
+            }
+        }
+
+        ul {
+            @extend %list-none;
+        }
+    }
+}
+
+.landing_garantia {
+	padding-bottom: 100px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+
+    h3 {
+        color: $secundary;
+        font-size: 140%;
+        font-weight: 900;
+        line-height: 140%;
+        margin-bottom: 15px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 160%;
+        }
+    }
+
+    h5 {
+        text-transform: none;
+        font-size: 120%;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    a {
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    .texto-legal {
+        font-size: 65%;
+        color: lighten($text-color, 40%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

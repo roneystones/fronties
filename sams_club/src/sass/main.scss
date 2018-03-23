@@ -1,0 +1,71 @@
+/*!
+ * Project: Sam's Club
+ * Author: Roney Lacerda
+ */
+
+@import 'vendor/_reset';
+@import 'vendor/_normalize';
+@import 'vendor/bootstrap-grid';
+
+// Mixins & Variables
+@import 'helpers/_mixins';
+@import 'helpers/_variables';
+@import 'helpers/_utilities';
+
+// Modulos
+@import 'components/_buttons';
+@import 'components/_nav';
+@import 'components/_footer';
+
+// Pages
+@import 'pages/_index';
+@import 'pages/_landing';
+
+html {
+    font-family: $font-family;
+    font-size: rem($text-size);
+    color: $text-color;
+    line-height: 150%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $cinza;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: $headings-margin-bottom;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: $headings-color;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    background-color: transparent; // Remove background cinza em links ativos no IE 10
+    
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+section {
+    padding: 50px 0;
+}

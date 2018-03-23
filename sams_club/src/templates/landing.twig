@@ -1,0 +1,200 @@
+{% extends 'layouts/default.twig' %}
+{% set head_title = 'Sams Club' %}
+{% set head_canonical = 'landing.html' %}
+
+{% block page %}
+	{% include 'components/nav.twig' %}
+
+	<section class="landing">
+		<div class="container">		
+			<div class="row">
+				<div class="col-xs-12 col-lg-6">
+					<div class="landing_titulo">					
+						<h1>Ainda não conhece o Sam's Club?</h1>
+						<h2>Tenha acesso a marcas premium, produtos importados e exclusivos do mundo todo por preços que valem muito a pena!</h2>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-lg-6">
+					<form>
+						<div class="landing_form">
+							<div class="form_topo">
+								<p class="form_titulo">Quero fazer parte do Sam's Club</p>
+							</div>
+
+							<div class="form_conteudo">
+								<div class="input_grupo">
+									<label for="nome">Nome completo</label>
+									<input type="text">
+								</div>
+
+								<div class="input_grupo">
+									<label for="email">E-mail</label>
+									<input type="text" placeholder="@">
+								</div>
+
+								<div class="input_grupo">
+									<label for="telefone">Telefone</label>
+									<input type="text" placeholder="xx xxxx xxxx">
+								</div>
+
+								<div class="input_grupo">
+									<label for="cpf">CPF</label>
+									<input type="text" placeholder="xxx xxx xxx xx">
+								</div>
+
+								<div class="input_grupo">
+									<button class="btn btn-block btn-primary">Seja sócio você também</button>
+								</div>
+							</div>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="landing_bullets">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-4">
+					<img class="center" src="img/info1.png" alt="">
+					<p>Somos o único clube de compras no Brasil que oferece aos sócios tudo que eles precisam em um único lugar.</p>
+				</div>
+
+				<div class="col-xs-12 col-lg-4">
+					<img class="center" src="img/info2.png" alt="">
+					<p>São mais de 5 mil itens do mundo todo, desdealimentos frescos em nossa seção de hortifruti achocolates e bebidas diferenciadas.</p>
+				</div>
+
+				<div class="col-xs-12 col-lg-4">
+					<img class="center" src="img/info3.png" alt="">
+					<p>Em cada visita, você encontra uma novidadesurpreendente e, por ser um clube exclusivo parasócios, tem a vantagem de fazer suas compras emum ambiente tranquilo e com poucas filas.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="landing_beneficios">
+		<div class="container">
+			<div class="landing_beneficios_titulo">			
+				<h3>Torne-se sócio agora e aproveite todos esses benefícios que só o Sam's Club em para oferecer.</h3>
+
+				<a class="btn btn-primary" href="#">faça parte do nosso clube</a>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="card">					
+						<div class="row">
+							<div class="col-3">
+								<img src="img/ico-1.png" alt="">
+							</div>
+							<div class="col-9">
+								<h4>Produtos importados</h4>
+								<p>Viajamos o mundo para ter novidades em nosso clube que com certeza vão dar um upgrade ao seu dia a dia como nenhum outro lugar pode oferecer.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="card">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/ico-2.png" alt="">		
+							</div>
+							<div class="col-9">
+								<h4>Embalagens econômicas</h4>
+								<p>Outra vantagem é que no Sam's Club você encontra produtos em embalagens grandes e exclusivas que garantem muito rendimento e economia. </p>	
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="card">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/ico-3.png" alt="">		
+							</div>
+							<div class="col-9">
+								<h4>Casa e família</h4>
+								<p>Apenas os sócios Sams Club tem acesso a grandes marcas de vestuário, cama, mesa e banho com preços que realmente fazem toda a diferenca. </p>	
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="card">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/ico-4.png" alt="">		
+							</div>
+							<div class="col-9">
+								<h4>Parcerias exclusivas</h4>
+								<p>Sócios Sam's Club têm acesso às melhores parcerias e redes de benefícios. Com descontos em:</p>	
+								<ul>
+									<li>• Clínicas de estética</li>
+									<li>• Parques temáticos</li>
+									<li>• Postos de gasolina</li>
+									<li>• E muito mais</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="card">					
+						<div class="row">
+							<div class="col-3">
+								<img src="img/ico-5.png" alt="">		
+							</div>
+							<div class="col-9">
+								<h4>Eventos temáticos</h4>
+								<ul>
+									<li>• Palestra de queijos e vinhos</li>
+									<li>• Palestra de cervejas especiais</li>
+									<li>• Festival volta ao mundo</li>
+									<li>• Eventos infantis</li>
+									<li>• E muito mais</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-md-6 col-lg-4">
+					<div class="card">
+						<div class="row">
+							<div class="col-3">
+								<img src="img/ico-6.png" alt="">		
+							</div>
+							<div class="col-9">
+								<h4>Degustações</h4>
+								<p>Além de frequentes degustações, anualmente temos um evento VIP exclusivo para sócios, que permite a degustação de novidades e produtos Premium ao som de uma boa música. </p>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="landing_garantia">
+		<div class="container">
+			<h3>Testou e não gostou? Devolvemos o seu dinheiro!</h3>
+			<h5>Você tem até o 11º mês para pedir o cancelamento da sua anuidade*</h5>
+
+			<a class="btn btn-primary" href="#">faça parte do nosso clube</a>
+
+			<img class="center" src="img/selo.png" alt="">
+		</div>
+		
+		<p class="texto-legal">* A anuidade do cartão é de R$ 75,00, e logo na primeira compra você já percebe a diferenca de preço do Sam's Club. Você ainda tem até o 11º mês, a partir da data de adesão ou renovação, para cancelar caso não esteja satisfeito. </p>
+	</section>
+
+	{% include 'components/footer.twig' %}
+{% endblock %}

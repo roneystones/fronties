@@ -1,0 +1,25 @@
+$font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$text-color: #222;
+$text-size: 16px;
+$letter-spacing: 0.5px;
+
+$paragraph-margin-bottom: 1rem;
+
+$headings-margin-bottom: 1rem;
+$headings-font-family: $font-family;
+$headings-font-weight: 700;
+$headings-line-height: inherit;
+$headings-color: inherit;
+
+$link-color: #006aaa;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 10%);
+$link-hover-decoration: none;
+
+$transition-base: all .2s ease-in-out;
+
+// Color
+$primary: #3fb756;
+$secundary: #006aaa;
+$cinza: #f7f7f7;

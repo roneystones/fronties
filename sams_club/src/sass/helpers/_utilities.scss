@@ -1,0 +1,11 @@
+.center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: lighten($text-color, 45%);
+    font-weight: normal;
+}
